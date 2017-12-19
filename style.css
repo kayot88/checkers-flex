@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+.wrapper{
+  transform: perspective(900px) rotate3d(150,10,0,-135deg);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 100vh;
+}
+#container {
+  -ms-align-self: center;
+  align-self: center;
+  margin-top: 50px;
+  height: 520px;
+  width: 520px;
+  margin: 0 auto;
+  display: relative;
+  outline: 20px solid yellow;
+}
+
+.parent {
+  display: flex;
+  position: relative;
+}
+
+.child {
+  width: 65px;
+  height: 65px;
+}
+
+.parent:nth-child(odd) .child:nth-child(odd) {
+  background: grey;
+}
+.parent:nth-child(odd) .child:nth-child(even) {
+  background: black;
+}
+
+.parent:nth-child(even) .child:nth-child(odd) {
+  background: black;
+}
+.parent:nth-child(even) .child:nth-child(even) {
+  background: grey;
+}
+
+.block{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  z-index: 100;
+}
+.bl{  
+  background-color: red;
+}
+.gr{
+  background-color: white;
+}
+.black1{
+  bottom: 130px;
+
+}
+
+.black2{
+  bottom: 0;
+  /*right: 65px;*/
+}
+.black3{
+  bottom: 65px;
+  left: 65px;
+}
+.black4{
+  bottom: 0px;
+  right: 65px;
+}
+.black5{
+  bottom: 130px;
+  left: 130px;
+}
+.black6{
+  bottom: 0px;
+  left: 130px;
+}
+.black7{
+  bottom: 65px;
+  right: 0px;
+}
+.black8{
+  bottom: 0px;
+  left: 260px;
+}
+.black9{
+  bottom: 130px;
+  left: 260px;
+}
+.black10{
+  bottom: 65px;
+  left: 195px;
+}
+.black11{
+  bottom: 130px;
+  right: 65px;
+}
+.black12{
+  bottom: 65px;
+  right: 130px;
+}
+.grey1{
+  top: 0;
+}
+
+.grey2{
+  top: 0;
+  right: 65px;
+}
+.grey3{
+  top: 65px;
+  left: 65px;
+}
+.grey4{
+  top: 130px;
+}
+.grey5{
+  top: 130px;
+  left: 130px;
+}
+.grey6{
+  top: 0px;
+  left: 130px;
+}
+.grey7{
+  top: 65px;
+  right: 0px;
+}
+.grey8{
+  top: 0px;
+  left: 260px;
+}
+.grey9{
+  top: 130px;
+  left: 260px;
+}
+.grey10{
+  top: 65px;
+  left: 195px;
+}
+.grey11{
+  top: 130px;
+  right: 65px;
+}
+.grey12{
+  top: 65px;
+  right: 130px;
+}
